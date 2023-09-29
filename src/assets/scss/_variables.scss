@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// color system
+$white: #ffffff;
+$purple: #3C448F;
+$darkgray: #1F2223;
+$gray: #5B5E65;
+$lightgray: #A4A7AA;
+$orange: #F58735;
+
+$colors: (
+  "white": $white,
+  "purple": $purple,
+  "darkgray": $darkgray,
+  "gray": $gray,
+  "lightgray": $lightgray,
+  "orange": $orange,
+);
+
+
