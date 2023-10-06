@@ -1,0 +1,54 @@
+@import "variables";
+
+.projects {
+//   min-height: 100vh;
+  width: 100%;
+  background-color: $darkgray;
+  border-radius: 27px;
+  padding-top: 120px;
+  scroll-snap-align: start;
+
+  .projects__sub-container {
+    margin-bottom: 50px;
+    .projects__title-container {
+      h1 span {
+        color: $purple;
+      }
+    }
+
+    .slider-arrows {
+      .arrow_container_left1,
+      .arrow_container_right1 {
+        background: $orange;
+        padding: 10px;
+        font-size: 30px;
+        color: white;
+        border-radius: 50%;
+        border: 5px solid white;
+        z-index: 10;
+        
+        @media screen and (max-width: 855px) {
+            transform: scale(0.7);
+        }
+      }
+      .arrow_container_left1{
+        transform: rotate(180deg);
+      }
+
+      @media screen and (max-width: 855px) {
+        .arrow_container_left1{
+            transform: scale(0.7) rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+.projects__slider-card {
+  .projects__slider-card-text {
+    p {
+      color: $lightgray;
+      font-size: 14.5px;
+    }
+  }
+}

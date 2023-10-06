@@ -1,0 +1,93 @@
+@import "variables";
+
+.services {
+  // padding-bottom: 20px;
+  scroll-snap-align: start;
+  min-height: 100vh;
+
+  .servicessub {
+    .arrows {
+      .arrow_container_left,
+      .arrow_container_right {
+        background: $orange;
+        padding: 10px;
+        font-size: 30px;
+        color: white;
+        border-radius: 50%;
+      }
+
+      .arrow_container_left_inactive,
+      .arrow_container_right_inactive {
+        background: $gray;
+        padding: 10px;
+        font-size: 30px;
+        color: white;
+        border-radius: 50%;
+      }
+    }
+    .ourservicestitle {
+      font-size: 30px;
+      color: $darkgray;
+      padding: 0 20px;
+      span {
+        color: $purple;
+      }
+    }
+    .main_container {
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .swiper {
+        @media screen and (min-width: 550px) {
+          -webkit-mask: linear-gradient(
+            90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent
+          );
+          mask: linear-gradient(
+            90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent
+          );
+        }
+      }
+      .swiper-slide-active {
+        .service_card {
+          background: $orange;
+          transform: scale(1);
+        }
+      }
+      .service_card {
+        background: $gray;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        width: 350px;
+        position: relative;
+        height: 370px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+          rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+          rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        transition: all ease 0.2s;
+        transform: scale(0.9);
+        h1 {
+          padding: 10px 10px 10px 20px;
+          font-size: 25px;
+          color: white;
+          font-weight: 500;
+          width: 100%;
+          border-bottom: 1px solid white;
+        }
+
+        img {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

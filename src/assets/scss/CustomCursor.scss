@@ -1,0 +1,42 @@
+/* CustomCursor.css */
+@import 'variables';
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.cursor-inner {
+  width: 10px;
+  height: 10px;
+  background: $purple;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-outer {
+
+  width: 32px;
+  height: 32px;
+//   border: 1px solid $purple;
+  background-color: #3230304d;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: transform 1s ease-in;
+  pointer-events: none;
+//   transition:  1s ease, opacity 0.2s ease, width 0.2s ease, height 0.2s ease;
+  opacity: 0.6;
+}
+
+.custom-cursor.hovered .cursor-outer {
+  width: 48px; /* Increase size on hover */
+  height: 48px; /* Increase size on hover */
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* Add any additional styles for your website content */

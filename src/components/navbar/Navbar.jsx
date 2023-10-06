@@ -16,14 +16,15 @@ const Navbar = () => {
         }
       >
         <ul className="flex justify-evenly desktop-nav items-center py-2">
+          <img src={logo} className="w-40" alt="" />
           <li>Home</li>
           <li>About</li>
-          <li>Service</li>
-          <li>
-            <img src={logo} className="w-40" alt="" />
-          </li>
+          <li>Services</li>
+          {/* <li>
+          </li> */}
+          {/* <img src={logo} className="w-40" alt="" /> */}
           <li>Projects</li>
-          <li>Features</li>
+          {/* <li>Features</li> */}
           <li>Contact us</li>
         </ul>
 
@@ -48,7 +49,13 @@ const Navbar = () => {
             ></span>
           </li>
         </ul>
-        <ul className={showmenu ? `w-full flex flex-col items-center mobile-links` : `hidden`}>
+        <ul
+          className={
+            showmenu
+              ? `w-full flex flex-col items-center mobile-links`
+              : `hidden`
+          }
+        >
           <li className="m-2">Home</li>
           <li className="m-2">About</li>
           <li className="m-2">Service</li>
