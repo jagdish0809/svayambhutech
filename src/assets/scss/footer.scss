@@ -1,0 +1,96 @@
+@import "variables";
+
+.footer {
+  // scroll-snap-align: start;
+  scroll-snap-align: start;
+  background: $darkgray;
+  border-radius: 30px 30px 0px 0px;
+  min-height: fit-content;
+
+  .footer_subcontainer {
+    .footer_main {
+      .logo_container {
+        p {
+          font-weight: 100;
+        }
+        .social_icons {
+          .icons_container {
+            background: #ffffff19;
+            padding: 12px;
+            border-radius: 50%;
+
+            .icon {
+              font-size: 22px;
+              color: white;
+            }
+          }
+        }
+      }
+      .navigation {
+        h1 {
+          color: $orange;
+        }
+        ul {
+          margin-top: 20px;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 175px;
+        }
+      }
+      .contact_footer {
+        h1 {
+          color: $orange;
+        }
+        ul {
+          margin-top: 20px;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100px;
+        }
+      }
+      .getthelatest {
+        padding-left: 30px;
+        h1 {
+          color: $orange;
+        }
+        .email_send_icons {
+          font-size: 22px;
+          background-color: $orange;
+          color: white;
+        }
+      }
+
+      @media screen and (max-width: 940px) {
+        width: 100%;
+        flex-wrap: wrap;
+        .logo_container,
+        .navigation,
+        .contact_footer,
+        .getthelatest {
+          width: 50%;
+        }
+
+        .contact_footer,
+        .getthelatest {
+          margin-top: 20px;
+          padding: 0;
+        }
+      }
+      @media screen and (max-width: 590px) {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        .logo_container,
+        .navigation,
+        .contact_footer,
+        .getthelatest {
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

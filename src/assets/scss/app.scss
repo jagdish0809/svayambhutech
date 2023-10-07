@@ -11,28 +11,27 @@
 }
 body {
   overflow-x: hidden;
-  cursor: none;
   scroll-behavior: smooth;
+
+  @media screen and (min-width:780px) {
+    cursor: none;
+  }
 }
 
 ::-webkit-scrollbar {
   display: none;
-  // width: 5px;
-  // height: 100px;
 }
 
-// body::-webkit-scrollbar-track{
-//   background-color: black;
-  // height: 100px;
-  // margin-right: 10px;
-  // margin-block: 10px;
-  // margin: 10px;
-  // z-index: 999;
-// }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-// ::-webkit-scrollbar-thumb{
-//   background: #fff;
-// }
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 //Home------------------------------------------------------------
 .home {
@@ -53,14 +52,14 @@ nav {
   transition: all 0.5s ease;
   height: 95px;
   //   overflow: hidden;
-  z-index: 10;
+  z-index: 12;
 
   .desktop-nav {
     li {
       list-style: none;
       display: inline-block;
       margin: 0 10px;
-      cursor: pointer;
+      cursor: none;
       font-size: 24px;
       color: $darkgray;
       transition: all 0.3s ease;
@@ -120,6 +119,7 @@ nav.active {
   border-radius: 25px;
   padding: 7px 20px;
   font-weight: 550;
+  cursor: none;
 }
 
 //Hero -----------------------------------------------------------------

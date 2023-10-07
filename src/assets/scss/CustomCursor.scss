@@ -1,42 +1,32 @@
 /* CustomCursor.css */
 @import 'variables';
 
-.custom-cursor {
-  position: fixed;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+
+@media screen and (min-width:780px) {
+  .cursor-dot,
+  .cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: $purple;
+  }
+  
+  .cursor-dot-outline {
+    width: 30px;
+    height: 30px;
+    background-color: #0725701b;
+  }
+  
 }
 
-.cursor-inner {
-  width: 10px;
-  height: 10px;
-  background: $purple;
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.cursor-outer {
-
-  width: 32px;
-  height: 32px;
-//   border: 1px solid $purple;
-  background-color: #3230304d;
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  transition: transform 1s ease-in;
-  pointer-events: none;
-//   transition:  1s ease, opacity 0.2s ease, width 0.2s ease, height 0.2s ease;
-  opacity: 0.6;
-}
-
-.custom-cursor.hovered .cursor-outer {
-  width: 48px; /* Increase size on hover */
-  height: 48px; /* Increase size on hover */
-  opacity: 1; /* Full opacity on hover */
-}
-
-/* Add any additional styles for your website content */

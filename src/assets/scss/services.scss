@@ -5,6 +5,11 @@
   scroll-snap-align: start;
   min-height: 100vh;
 
+  @media screen and (max-width:550px) {
+    min-height: fit-content;
+    padding-bottom: 100px;
+  }
+
   .servicessub {
     .arrows {
       .arrow_container_left,

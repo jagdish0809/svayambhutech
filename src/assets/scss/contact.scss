@@ -1,0 +1,101 @@
+@import "variables";
+
+.contact {
+  scroll-snap-align: start;
+  padding-top: 130px;
+  width: 100vw;
+  min-height: 100vh;
+
+  @media screen and (max-width: 855px) {
+    min-height: fit-content;
+    padding-bottom: 100px;
+  }
+
+  .contact_container {
+    .contact_container-left {
+      h1 {
+        color: $purple;
+      }
+      .contact_details {
+        background-color: #f6f6f6;
+        border-radius: 15px;
+        // height: 60px;
+        padding: 20px 15px;
+        border: 1.5px solid $purple;
+        color: $gray;
+
+        @media screen and (max-width: 1275px) {
+          flex-direction: column;
+          .details_sub {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .contact_container-right {
+      padding-top: 50px;
+      form {
+        background-color: #f6f6f6;
+        border-radius: 27px;
+        border: 1.5px solid $purple;
+        color: $gray;
+
+        input {
+          height: 50px;
+          border-radius: 15px;
+          outline: none;
+          border: 1.5px solid $purple;
+          padding: 0 10px;
+          font-weight: 500;
+        }
+        textarea {
+          border-radius: 15px;
+          outline: none;
+          border: 1.5px solid $purple;
+          resize: none;
+          overflow: auto;
+          padding: 10px 10px;
+          font-weight: 500;
+        }
+
+        @media screen and (max-width: 640px) {
+          padding: 20px 20px;
+          .mobile_col_input {
+            flex-direction: column;
+
+            .mobile_col_sub {
+              width: 100%;
+            }
+          }
+          textarea {
+            resize: vertical;
+          }
+
+          input {
+            height: 40px;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 855px) {
+      flex-direction: column;
+
+      .contact_container-left,
+      .contact_container-right {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.submit_btn {
+  background-color: $orange;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 7px 20px;
+  font-weight: 550;
+  cursor: none;
+}
