@@ -11,9 +11,7 @@ const Contact = () => {
           <div className="contact_container-left w-[40%] px-2 md:px-10">
             <h1 className="text-[30px] font-bold">Contact Us</h1>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Laudantium voluptas est eius et sunt quod voluptate temporibus
-              reprehende
+              We would be happy to hear from you, please fill the form or mail us your requirements.
             </p>
             <div className="contact_details flex items-center mt-10">
               <h2 className="flex items-center w-[40%] details_sub">

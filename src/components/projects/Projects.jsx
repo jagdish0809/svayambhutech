@@ -43,11 +43,11 @@ const Projects = () => {
       <CustomCursor cursorOverProjects={cursorOverProjects} />
       <div className="projects  flex justify-center px-7 mt-20 md:mt-0 pb-10">
         <div className="projects__sub-container w-[100vw] relative max-w-[1600px]">
-          <div className="w-full projects__title-container flex justify-between items-center mb-4">
+          <div className="w-full projects__title-container flex justify-between items-center mb-4 px-5">
             <h1 className="font-bold text-white text-[30px]">
               Let’s Have a Look at our <span>Projects</span>
             </h1>
-            <Button value="See More" />
+            <Button value="See More" className="project_see_more_desktop" />
           </div>
           <div className="projects__slider-container">
             <Swiper
@@ -57,6 +57,7 @@ const Projects = () => {
                 delay: 3000,
                 disableOnInteraction: false,
               }}
+              loop={true}
               speed={1000}
               breakpoints={{
                 855: {
@@ -85,13 +86,19 @@ const Projects = () => {
                   <img src={veselka} alt="" className="" />
                   <div className="projects__slider-card-text px-4 mt-2">
                     <h1 className="text-2xl text-white">Veselka Interiors</h1>
-                    <div className="flex">
+                    <div className="flex flex-wrap">
                       <TechButton
                         value="JavaScript"
-                        className="bg-amber-500 text-white"
+                        className="bg-amber-500 text-white mt-1"
                       />
-                      <TechButton value="SCSS" className="border text-white" />
-                      <TechButton value="HTML" className="border text-white" />
+                      <TechButton
+                        value="SCSS"
+                        className="border text-white mt-1"
+                      />
+                      <TechButton
+                        value="HTML"
+                        className="border text-white mt-1"
+                      />
                     </div>
                     <p className="">
                       The Veselka Interior Design website epitomizes our
@@ -106,20 +113,35 @@ const Projects = () => {
                 <div className="projects__slider-card flex flex-col justify-center items-end">
                   <img src={veselka} alt="" className="" />
                   <div className="projects__slider-card-text px-4 mt-2">
-                    <h1 className="text-2xl text-white">Veselka Interiors</h1>
-                    <div className="flex">
+                    <h1 className="text-2xl text-white">Material Buy</h1>
+                    <div className="flex flex-wrap">
                       <TechButton
-                        value="JavaScript"
-                        className="bg-amber-500 text-white"
+                        value="Reactjs"
+                        className="bg-sky-600 text-white mt-1"
                       />
-                      <TechButton value="SCSS" className="border text-white" />
-                      <TechButton value="HTML" className="border text-white" />
+                      <TechButton
+                        value="Nodejs"
+                        className="text-white bg-green-900 mt-1"
+                      />
+                      <TechButton
+                        value="MongoDB"
+                        className="bg-green-300 text-black mt-1"
+                      />
+                      <TechButton
+                        value="Tailwind"
+                        className="border text-white mt-1"
+                      />
+                      <TechButton
+                        value="HTML"
+                        className="border text-white mt-1"
+                      />
                     </div>
                     <p className="">
-                      The Veselka Interior Design website epitomizes our
-                      dedication to seamlessly merging aesthetics and
-                      user-friendly design, transforming spaces into digital
-                      symphonies of timeless elegance.
+                      Your One-Stop Dynamic E-Commerce Destination. Discover a
+                      world of quality materials, a seamless shopping
+                      experience, and the convenience of online commerce, all in
+                      one place. Dive into our dynamic e-commerce website today
+                      and transform your shopping journey!"
                     </p>
                   </div>
                 </div>
@@ -128,20 +150,33 @@ const Projects = () => {
                 <div className="projects__slider-card flex flex-col justify-center items-center">
                   <img src={veselka} alt="" className="" />
                   <div className="projects__slider-card-text px-4 mt-2">
-                    <h1 className="text-2xl text-white">Veselka Interiors</h1>
-                    <div className="flex">
+                    <h1 className="text-2xl text-white">Shiva Performance</h1>
+                    <div className="flex flex-wrap">
                       <TechButton
                         value="JavaScript"
-                        className="bg-amber-500 text-white"
+                        className="bg-amber-500 text-white mt-1"
                       />
-                      <TechButton value="SCSS" className="border text-white" />
-                      <TechButton value="HTML" className="border text-white" />
+                      <TechButton
+                        value="Nodejs"
+                        className="text-white bg-green-900 mt-1"
+                      />
+                      <TechButton
+                        value="MongoDB"
+                        className="bg-green-300 text-black mt-1"
+                      />
+                      <TechButton
+                        value="CSS"
+                        className="border text-white mt-1"
+                      />
+                      <TechButton
+                        value="HTML"
+                        className="border text-white mt-1"
+                      />
                     </div>
                     <p className="">
-                      The Veselka Interior Design website epitomizes our
-                      dedication to seamlessly merging aesthetics and
-                      user-friendly design, transforming spaces into digital
-                      symphonies of timeless elegance.
+                      Unleashing the Power of Pigments. Dive into our website,
+                      where colors become an art form, driving performance and
+                      igniting creativity in every project.
                     </p>
                   </div>
                 </div>
@@ -150,20 +185,33 @@ const Projects = () => {
                 <div className="projects__slider-card flex flex-col justify-center items-center">
                   <img src={veselka} alt="" className="" />
                   <div className="projects__slider-card-text px-4 mt-2 ">
-                    <h1 className="text-2xl text-white">Veselka Interiors</h1>
-                    <div className="flex">
+                    <h1 className="text-2xl text-white">Arihant Pigments</h1>
+                    <div className="flex flex-wrap">
                       <TechButton
                         value="JavaScript"
-                        className="bg-amber-500 text-white"
+                        className="bg-amber-500 text-white mt-1"
                       />
-                      <TechButton value="SCSS" className="border text-white" />
-                      <TechButton value="HTML" className="border text-white" />
+                      <TechButton
+                        value="Nodejs"
+                        className="text-white bg-green-900 mt-1"
+                      />
+                      <TechButton
+                        value="MongoDB"
+                        className="bg-green-300 text-black mt-1"
+                      />
+                      <TechButton
+                        value="CSS"
+                        className="border text-white mt-1"
+                      />
+                      <TechButton
+                        value="HTML"
+                        className="border text-white mt-1"
+                      />
                     </div>
                     <p className="">
-                      The Veselka Interior Design website epitomizes our
-                      dedication to seamlessly merging aesthetics and
-                      user-friendly design, transforming spaces into digital
-                      symphonies of timeless elegance.
+                      Harnessing the Magic of Pigments. Discover our website,
+                      where pigments take center stage, infusing vibrancy and
+                      depth into every design.
                     </p>
                   </div>
                 </div>
@@ -172,7 +220,9 @@ const Projects = () => {
                 <div className="projects__slider-card flex flex-col justify-center items-center">
                   <img src={veselka} alt="" className="" />
                   <div className="projects__slider-card-text px-4 mt-2">
-                    <h1 className="text-2xl text-white">Veselka Interiors</h1>
+                    <h1 className="text-2xl text-white">
+                      Lifeskapes Interiors
+                    </h1>
                     <div className="flex">
                       <TechButton
                         value="JavaScript"
@@ -182,10 +232,9 @@ const Projects = () => {
                       <TechButton value="HTML" className="border text-white" />
                     </div>
                     <p className="">
-                      The Veselka Interior Design website epitomizes our
-                      dedication to seamlessly merging aesthetics and
-                      user-friendly design, transforming spaces into digital
-                      symphonies of timeless elegance.
+                      Where Imagination Meets Reality. Explore our platform,
+                      where innovative design concepts come to life, creating
+                      spaces that blend artistry and functionality seamlessly.
                     </p>
                   </div>
                 </div>
@@ -201,6 +250,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        <Button value="See More" className="project_see_more_phone" />
       </div>
     </>
   );

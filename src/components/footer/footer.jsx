@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../assets/scss/footer.scss";
 import Button from "../UI/Button";
 import logo from "../../assets/images/logo.png";
 import { BsInstagram, BsLinkedin, BsFacebook } from "react-icons/Bs";
 import {AiOutlineSend} from 'react-icons/Ai';
+
 
 const footer = () => {
   return (
@@ -72,14 +73,16 @@ const footer = () => {
                     className="w-full rounded-lg h-[40px] px-3 "
                   />
                   <div className="absolute email_send_icons bg-white flex items-center justify-center top-0 right-0 h-[40px] w-[40px] rounded-r-lg">
-                        <AiOutlineSend/>
+                    <AiOutlineSend />
                   </div>
                 </form>
               </div>
             </div>
           </div>
           <div className="w-full footer_header border-t flex items-center justify-center pt-5">
-            <p className="text-white">Copyright @ 2023 Svayambhu Tech. All Rights Reserved.</p>
+            <p className="text-white">
+              Copyright @ 2023 Svayambhu Tech. All Rights Reserved.
+            </p>
           </div>
         </div>
       </div>

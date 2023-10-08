@@ -52,3 +52,22 @@
     }
   }
 }
+
+.project_see_more_phone{
+  display: none !important;
+}
+
+@media screen and (max-width:680px) {
+  .project_see_more_desktop{
+    display: none !important;
+  }
+
+  .projects{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project_see_more_phone{
+    display: flex !important;
+  }
+}

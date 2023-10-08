@@ -8,7 +8,7 @@
 
   @media screen and (max-width: 855px) {
     min-height: fit-content;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
   }
 
   .contact_container {
@@ -16,12 +16,15 @@
       h1 {
         color: $purple;
       }
+      p{
+        color: $darkgray;
+      }
       .contact_details {
         background-color: #f6f6f6;
         border-radius: 15px;
         // height: 60px;
         padding: 20px 15px;
-        border: 1.5px solid $purple;
+        border: 1px solid $darkgray;
         color: $gray;
 
         @media screen and (max-width: 1275px) {
@@ -38,21 +41,21 @@
       form {
         background-color: #f6f6f6;
         border-radius: 27px;
-        border: 1.5px solid $purple;
+        border: 1px solid $darkgray;
         color: $gray;
 
         input {
           height: 50px;
           border-radius: 15px;
           outline: none;
-          border: 1.5px solid $purple;
+          border: 1px solid $darkgray;
           padding: 0 10px;
           font-weight: 500;
         }
         textarea {
           border-radius: 15px;
           outline: none;
-          border: 1.5px solid $purple;
+          border: 1px solid $darkgray;
           resize: none;
           overflow: auto;
           padding: 10px 10px;
