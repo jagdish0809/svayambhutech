@@ -21,9 +21,9 @@ const footer = () => {
             <div className="logo_container w-[40%] pr-10">
               <img src={logo} alt="" className="w-[40%]" />
               <p className="text-white mt-5">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                magnam iure aut aliquid molestiae, nostrum sunt ad voluptate
-                vitae deleniti.
+                SvayambhuTech: Where Innovation Knows No Boundaries. We
+                specialize in web apps, app development, e-commerce solutions,
+                and cutting-edge AR/VR games. Let's bring your vision to life
               </p>
               <div className="flex social_icons w-[45%] md:w-[28%] mt-5 items-center justify-between">
                 <div className="icons_container">

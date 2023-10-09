@@ -5,6 +5,9 @@ import { FaArrowRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import veselka from "../../assets/images/veselka.png";
+import arihant from "../../assets/images/arihantpigments.png";
+import mbuy from "../../assets/images/mbuy.png";
+import shiva from "../../assets/images/shivaperformance.png";
 import TechButton from "../UI/TechButton";
 import CustomCursor from "../UI/CustomCursor";
 
@@ -41,7 +44,9 @@ const Projects = () => {
   return (
     <>
       <CustomCursor cursorOverProjects={cursorOverProjects} />
-      <div className="projects  flex justify-center px-7 mt-20 md:mt-0 pb-10">
+      <div
+        className="projects  flex justify-center px-7 mt-20 md:mt-0 pb-10"
+      >
         <div className="projects__sub-container w-[100vw] relative max-w-[1600px]">
           <div className="w-full projects__title-container flex justify-between items-center mb-4 px-5">
             <h1 className="font-bold text-white text-[30px]">
@@ -111,7 +116,7 @@ const Projects = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="projects__slider-card flex flex-col justify-center items-end">
-                  <img src={veselka} alt="" className="" />
+                  <img src={mbuy} alt="" className="" />
                   <div className="projects__slider-card-text px-4 mt-2">
                     <h1 className="text-2xl text-white">Material Buy</h1>
                     <div className="flex flex-wrap">
@@ -137,18 +142,17 @@ const Projects = () => {
                       />
                     </div>
                     <p className="">
-                      Your One-Stop Dynamic E-Commerce Destination. Discover a
-                      world of quality materials, a seamless shopping
-                      experience, and the convenience of online commerce, all in
-                      one place. Dive into our dynamic e-commerce website today
-                      and transform your shopping journey!"
+                      Material Buy excels as a premier construction product
+                      supplier, while Svayambhu Tech specializes in crafting
+                      intuitive e-commerce platforms to serve a vast user base,
+                      numbering in the hundreds of thousands.
                     </p>
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="projects__slider-card flex flex-col justify-center items-center">
-                  <img src={veselka} alt="" className="" />
+                  <img src={shiva} alt="" className="" />
                   <div className="projects__slider-card-text px-4 mt-2">
                     <h1 className="text-2xl text-white">Shiva Performance</h1>
                     <div className="flex flex-wrap">
@@ -183,7 +187,7 @@ const Projects = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="projects__slider-card flex flex-col justify-center items-center">
-                  <img src={veselka} alt="" className="" />
+                  <img src={arihant} alt="" className="" />
                   <div className="projects__slider-card-text px-4 mt-2 ">
                     <h1 className="text-2xl text-white">Arihant Pigments</h1>
                     <div className="flex flex-wrap">

@@ -9,9 +9,13 @@
   font-family: "Outfit", sans-serif;
   font-family: "Poppins", sans-serif;
 }
-body {
-  overflow-x: hidden;
+
+html{
   scroll-behavior: smooth;
+}
+body {
+  // overflow-x: hidden;
+  // scroll-behavior: smooth;
 
   @media screen and (min-width:780px) {
     cursor: none;
@@ -109,7 +113,7 @@ nav {
 nav.active {
   height: auto;
   // overflow: visible;
-  transition: all 5s ease;
+  // transition: all 5s ease;
 }
 
 .btn-primary {
@@ -121,73 +125,3 @@ nav.active {
   font-weight: 550;
   cursor: none;
 }
-
-//Hero -----------------------------------------------------------------
-
-// .hero {
-//   overflow: hidden;
-//   .carousel {
-//     .carousel-item {
-//       flex: 1;
-//       transition: transform 1s ease;
-//       transform: translateX(0%);
-
-//       .text-container {
-//         h1 {
-//           color: $purple;
-//         }
-//         p {
-//           color: $darkgray;
-//         }
-//       }
-
-//       @media screen and (max-width: 855px) {
-//         flex-direction: column-reverse;
-//         .text-container {
-//           width: 100%;
-//           padding: 20px 10px;
-//         }
-//         .svg-container {
-//           width: 100%;
-//         }
-//       }
-//     }
-//     .carousel-item.active1 {
-//       transform: translateX(-100%);
-//     }
-
-//     .carousel-item.active2 {
-//       transform: translateX(-200%);
-//     }
-
-//     .carousel-item.active3 {
-//       transform: translateX(-300%);
-//     }
-//   }
-
-//   .indicators {
-//     span {
-//       background-color: $lightgray;
-//       margin: 5px;
-//     }
-//     span.active {
-//       background-color: $orange;
-//       height: 15px;
-//       width: 15px;
-//       border: 3px solid #fff;
-//       box-shadow: 0 0 0 1px $orange;
-//       text-align: center;
-//       line-height: 15px;
-//       animation: rotateClockwise 3s linear infinite;
-//     }
-//     @keyframes rotateClockwise {
-//       0% {
-//         box-shadow: 1px 0px 0 0 $orange;
-//       }
-//       100% {
-//         transform: rotate(360deg);
-//         box-shadow: 1px 0px 0 0 $orange;
-//       }
-//     }
-//   }
-// }

@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
-    const [showmenu, setshowMenu] = useState(false)
-    const shownavlinks = () => {
-        setshowMenu(!showmenu)
-    }
+  const [showmenu, setshowMenu] = useState(false);
+  const shownavlinks = () => {
+    setshowMenu(!showmenu);
+  };
   return (
     <>
       <nav
@@ -60,7 +60,7 @@ const Navbar = () => {
           <li className="m-2">About</li>
           <li className="m-2">Service</li>
           <li className="m-2">Projects</li>
-          <li className="m-2">Features</li>
+          {/* <li className="m-2">Features</li> */}
           <li className="m-2">Contact us</li>
         </ul>
       </nav>

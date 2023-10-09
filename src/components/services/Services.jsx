@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import service1 from "../../assets/images/service1.png";
 import app from "../../assets/images/sapp.png";
 import ecommerce from "../../assets/images/secommerce.png";
@@ -16,16 +16,56 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const Services = () => {
-  const [slidenumber, setSlideNumber] = useState(null);
+const [slidenumber, setSlideNumber] = useState(null);
+const aimlVideoRef = useRef(null);
+const arvrVideoRef = useRef(null);
+const gameVideoRef = useRef(null);
 
-  useEffect(() => {
-    setSlideNumber(2);
-  }, []);
+useEffect(() => {
+  setSlideNumber(2);
+}, []);
 
-  const handleSlideChange = (swiper) => {
-    setSlideNumber(swiper.realIndex);
-    console.log(swiper.realIndex);
-  };
+useEffect(() => {
+    if (slidenumber === 1) {
+      // Play the AIML video when slidenumber is 1
+      if (aimlVideoRef.current) {
+        aimlVideoRef.current.play();
+      }
+    } else {
+      // Pause the AIML video when slidenumber is not 1
+      if (aimlVideoRef.current) {
+        aimlVideoRef.current.pause();
+      }
+    }
+
+    if (slidenumber === 5) {
+      // Play the AIML video when slidenumber is 1
+      if (arvrVideoRef.current) {
+        arvrVideoRef.current.play();
+      }
+    } else {
+      // Pause the AIML video when slidenumber is not 1
+      if (arvrVideoRef.current) {
+        arvrVideoRef.current.pause();
+      }
+    }
+
+        if (slidenumber === 6) {
+          // Play the AIML video when slidenumber is 1
+          if (gameVideoRef.current) {
+            gameVideoRef.current.play();
+          }
+        } else {
+          // Pause the AIML video when slidenumber is not 1
+          if (gameVideoRef.current) {
+            gameVideoRef.current.pause();
+          }
+        }
+}, [slidenumber]);
+
+const handleSlideChange = (swiper) => {
+  setSlideNumber(swiper.realIndex);
+};
   return (
     <div className="services h-min-[100vh] w-[100vw] max-w-[1600px]">
       <div className="mt-[130px] servicessub w-full">
@@ -107,6 +147,7 @@ const Services = () => {
                     preload="metadata"
                     src={aiml}
                     className="relative ar_video" // Add the source directly to the video element
+                    ref={aimlVideoRef}
                   />
                 </div>
                 {/* <img src={service1} alt="" /> */}
@@ -146,6 +187,7 @@ const Services = () => {
                     preload="metadata"
                     src={ar}
                     className="relative ar_video" // Add the source directly to the video element
+                    ref={arvrVideoRef}
                   />
                 </div>
                 {/* <img src={service1} alt="" className="ar_img" /> */}
@@ -167,6 +209,7 @@ const Services = () => {
                     preload="metadata"
                     src={game}
                     className="relative ar_video" // Add the source directly to the video element
+                    ref={gameVideoRef}
                   />
                 </div>
                 {/* <img src={service1} alt="" /> */}
