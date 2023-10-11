@@ -6,7 +6,10 @@ import { BsInstagram, BsLinkedin, BsFacebook } from "react-icons/Bs";
 import {AiOutlineSend} from 'react-icons/Ai';
 
 
-const footer = () => {
+const footer = (props) => {
+    const scrollSectionIntoView = (id) => {
+      props.selected(id);
+    };
   return (
     <>
       <div className="footer w-full p-10">
@@ -40,11 +43,17 @@ const footer = () => {
             <div className="navigation h-full w-[15%]">
               <h1 className="text-xl">Navigation</h1>
               <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Contact us</li>
+                <li onClick={() => scrollSectionIntoView("hero")}>Home</li>
+                <li onClick={() => scrollSectionIntoView("about")}>About</li>
+                <li onClick={() => scrollSectionIntoView("services")}>
+                  Services
+                </li>
+                <li onClick={() => scrollSectionIntoView("projects")}>
+                  Projects
+                </li>
+                <li onClick={() => scrollSectionIntoView("contact")}>
+                  Contact us
+                </li>
               </ul>
             </div>
             <div className="contact_footer w-[15%]">

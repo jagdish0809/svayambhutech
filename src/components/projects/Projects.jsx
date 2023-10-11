@@ -14,7 +14,7 @@ import CustomCursor from "../UI/CustomCursor";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const Projects = () => {
+const Projects = (props) => {
   const [cursorOverProjects, setCursorOverProjects] = useState(false);
 
   const handleMouseEnter = () => {
@@ -45,7 +45,7 @@ const Projects = () => {
     <>
       <CustomCursor cursorOverProjects={cursorOverProjects} />
       <div
-        className="projects  flex justify-center px-7 mt-20 md:mt-0 pb-10"
+        className="projects  flex justify-center px-7 mt-20 md:mt-0 pb-10" id={props.id}
       >
         <div className="projects__sub-container w-[100vw] relative max-w-[1600px]">
           <div className="w-full projects__title-container flex justify-between items-center mb-4 px-5">

@@ -137,9 +137,10 @@
   // height: 200px;
   // width: 200px;
   border-radius: 27px;
-  overflow: hidden;
   background: #fff;
   margin-top: 45px;
+  // height: 100%;
+  overflow: hidden;
 }
 
 .ar_video{
@@ -147,4 +148,5 @@
   // height: 500px;
   // width: auto;
   // margin-top: -50px;
+  height: 100%;
 }

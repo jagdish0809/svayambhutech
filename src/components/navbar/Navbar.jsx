@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [showmenu, setshowMenu] = useState(false);
+
+  const scrollSectionIntoView = (id) => {
+    props.selected(id);
+    setshowMenu(false)
+  };
+
   const shownavlinks = () => {
     setshowMenu(!showmenu);
   };
+
   return (
     <>
       <nav
@@ -17,15 +24,11 @@ const Navbar = () => {
       >
         <ul className="flex justify-evenly desktop-nav items-center py-2">
           <img src={logo} className="w-40" alt="" />
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          {/* <li>
-          </li> */}
-          {/* <img src={logo} className="w-40" alt="" /> */}
-          <li>Projects</li>
-          {/* <li>Features</li> */}
-          <li>Contact us</li>
+          <li onClick={() => scrollSectionIntoView("hero")}>Home</li>
+          <li onClick={() => scrollSectionIntoView("about")}>About</li>
+          <li onClick={() => scrollSectionIntoView("services")}>Services</li>
+          <li onClick={() => scrollSectionIntoView("projects")}>Projects</li>
+          <li onClick={() => scrollSectionIntoView("contact")}>Contact us</li>
         </ul>
 
         <ul className="mobile-nav flex items-center justify-between px-10 py-2">
@@ -56,12 +59,11 @@ const Navbar = () => {
               : `hidden`
           }
         >
-          <li className="m-2">Home</li>
-          <li className="m-2">About</li>
-          <li className="m-2">Service</li>
-          <li className="m-2">Projects</li>
-          {/* <li className="m-2">Features</li> */}
-          <li className="m-2">Contact us</li>
+          <li className="m-2" onClick={() => scrollSectionIntoView("hero")}>Home</li>
+          <li className="m-2" onClick={() => scrollSectionIntoView("about")}>About</li>
+          <li className="m-2" onClick={() => scrollSectionIntoView("services")}>Service</li>
+          <li className="m-2" onClick={() => scrollSectionIntoView("projects")}>Projects</li>
+          <li className="m-2" onClick={() => scrollSectionIntoView("contact")}>Contact us</li>
         </ul>
       </nav>
     </>

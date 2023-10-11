@@ -9,7 +9,7 @@ import "../../assets/scss/app.scss";
 import Button from "../UI/Button";
 import '../../assets/scss/hero.scss';
 
-const Hero = () => {
+const Hero = (props) => {
   
   useEffect(() => {
     let counter = 2;
@@ -154,7 +154,10 @@ const Hero = () => {
 
   return (
     <>
-      <div className="hero flex flex-col justify-center items-center w-[100vw] max-w-[1600px]">
+      <div
+        className="hero flex flex-col justify-center items-center w-[100vw] max-w-[1600px]"
+        id={props.id}
+      >
         <div className="carousel flex w-full mt-40 pl-0 md:pl-6">
           <div className="carousel-item min-w-full flex items-center justify-center max-w-[1600px] active">
             <div className="text-container w-2/5">

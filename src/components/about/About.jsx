@@ -2,12 +2,10 @@ import React from "react";
 import techboy from "../../assets/svg/techboy.svg";
 import '../../assets/scss/about.scss';
 
-const About = () => {
+const About = (props) => {
   return (
     <>
-      {/* <div className="h-screen about flex justify-center">
-      </div> */}
-      <div className="about flex mt-[30px] items-center justify-center w-full">
+      <div className="about flex mt-[30px] items-center justify-center w-full" id={props.id}>
         <div className="sub-about w-[90vw] flex items-center justify-center">
           <div className="svg-container">
             <img src={techboy} alt="" className="" />

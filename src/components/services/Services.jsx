@@ -15,7 +15,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const Services = () => {
+const Services = (props) => {
 const [slidenumber, setSlideNumber] = useState(null);
 const aimlVideoRef = useRef(null);
 const arvrVideoRef = useRef(null);
@@ -67,7 +67,10 @@ const handleSlideChange = (swiper) => {
   setSlideNumber(swiper.realIndex);
 };
   return (
-    <div className="services h-min-[100vh] w-[100vw] max-w-[1600px]">
+    <div
+      className="services h-min-[100vh] w-[100vw] max-w-[1600px]"
+      id={props.id}
+    >
       <div className="mt-[130px] servicessub w-full">
         <h1 className="w-full border-b ourservicestitle font-bold">
           Our <span>Services</span>

@@ -3,10 +3,10 @@ import "../../assets/scss/contact.scss";
 import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <>
-      <div className="contact w-[100vw]  max-w-[1600px] flex justify-center">
+      <div className="contact w-[100vw]  max-w-[1600px] flex justify-center" id={props.id}>
         <div className="contact_container flex w-full">
           <div className="contact_container-left w-[40%] px-2 md:px-10">
             <h1 className="text-[30px] font-bold">Contact Us</h1>
